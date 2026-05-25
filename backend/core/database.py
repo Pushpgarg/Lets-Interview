@@ -10,7 +10,7 @@ class DatabaseManager:
     Handles connections to the database using the Motor async driver.
     """
     def __init__(self):
-        self.client: AsyncIOMotorClient = None
+        self.client: AsyncIOMotorClient = None 
         self.db = None
 
     async def connect_to_database(self) -> None:
